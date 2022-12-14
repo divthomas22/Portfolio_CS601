@@ -1,0 +1,46 @@
+{
+    "courses": [
+        {
+            "semester": "SPRING 2021",
+            "code": "CS248",
+            "name": "Discrete Mathematics",
+            "grade": "A-"
+        },
+        {
+            "semester": "SPRING 2021",
+            "code": "CS472",
+            "name": "Computer Architecture",
+            "grade": "A"
+        },
+        {
+            "semester": "FALL 2021",
+            "code": "CS521",
+            "name": "Info Str Python",
+            "grade": "A-"
+        },
+        {
+            "semester": "FALL 2021",
+            "code": "CS526",
+            "name": "Data Structures and Algorithms",
+            "grade": "B"
+        },
+        {
+            "semester": "SPRING 2022",
+            "code": "CS665",
+            "name": "Software Design and Patterns",
+            "grade": "B+"
+        },
+        {
+            "semester": "SUMMER 2022",
+            "code": "CS683",
+            "name": "Mobile Application Development",
+            "grade": "A"
+        },
+        {
+            "semester": "FALL 2022",
+            "code": "CS673",
+            "name": "Software Engineering",
+            "grade": "A-"
+        }
+    ]
+}
