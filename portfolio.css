@@ -1,0 +1,189 @@
+/* All screens have a similar general font and background */
+body {
+    font-family: Helvetica, Verdana, Arial, sans-serif;
+     background-color: lightcyan;
+     color: black;
+     }
+
+/* Header will be consistent throughout all pages */
+
+header {
+    padding: 1em;
+    padding-bottom: 0px;
+    width: 100%;
+    position:sticky;
+    top: 0;
+    background-color: aquamarine;
+}
+
+header h1{
+    text-align: center;
+    text-shadow: 3px 3px grey;
+    color:goldenrod;
+}
+
+header nav, .button-container, .container-flex {
+	list-style: none; 
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding: 1em 5em;
+}
+
+.panel {
+    flex: 50%;
+    padding: 1em 5em;
+}
+
+.menu { 
+    flex: 20%;
+    padding: 1em 5em;
+}
+
+.button {
+    flex: 25%;
+    padding: 1em 5em;
+}
+
+.menu:hover, .button:hover, .button:active { 
+    background-color: blueviolet;
+    color: white;
+}
+
+.menu a {
+    text-decoration: none;
+}
+
+/* The text will be altered on hover of the entire list item*/
+.menu:hover > a {
+    color: white;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 40vw);
+    grid-gap: 15px;
+}
+
+.gal_item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section h2 {
+    padding-top: 20px;
+    text-align: center;
+    color:rebeccapurple;
+}
+
+#contact{
+    text-align: center;
+}
+#contact ul{
+    list-style: none;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    text-align: right;
+    width: 100%;
+    background-color: aquamarine;
+}
+
+footer p {
+    margin-right: 1em;
+    font-size: small;
+    color: grey;
+}
+
+form p {
+    font-weight: bold;
+
+}
+
+form span {
+    font-weight: normal;
+}
+
+#firstName, #lastName, #email, #phone, #subject, #message {
+    border: 3px solid rebeccapurple;
+}
+
+.container {
+    margin: 3em;
+    margin-bottom: 4em;
+}
+
+#habittracker {
+    border: 1pt dashed grey;
+    padding: 1em;
+}
+
+#habittracker p{
+    text-align: center;
+    font-weight: bold;
+}
+
+#habittracker ul{
+    list-style: none;
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    padding: 1em;
+}
+
+#habittracker li{
+    padding: 1em;
+    align-self: center;
+}
+
+table {
+    width: 100%;
+    border: 1pt solid grey;
+    text-align: justify;
+}
+
+th {
+    border-bottom: 1pt dashed grey;
+}
+
+
+/*
+For some reason I am unable to test this on the responsive design.
+Even though I have checked syntax multiple times,
+I guess I'm just guessing that this works.
+*/
+@media (max-width: 800px) {
+    /*
+    Once the screen is less than 480px:
+    - Headings in each section (Introduction and Contact Divya on the first page) will change color
+    - The images for the habit tracker will show the photos one above the other, instead of side-by-side
+    - The header will no longer be sticky and user will need to scroll up to see the menu, so it doesn't
+    take up as much space on the smaller screen.
+    */
+    header nav, .button-container, .container-flex{
+        flex-direction: column;
+    }
+
+    section h1 {
+        color:darkgoldenrod;
+    }
+
+    #habittracker ul {
+        display: block;
+    }
+
+    header {
+        position:relative;
+    }
+}

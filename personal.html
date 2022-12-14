@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Divya Thomas</title>
+        <link href="portfolio.css" rel="stylesheet">
+        <script src="https://unpkg.com/vue@next"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Divya Thomas</h1>
+            <!--The navigation bar to each page in the website.-->
+            <nav>
+                <li class="menu"><a href="index.html">Introduction</a></li>
+                <li class="menu"><a href="personal.html">Personal</a></li>
+                <li class="menu"><a href="professional.html">Resume</a></li>
+                <li class="menu"><a href="gallery.html">Photo Gallery</a></li>
+                <li class="menu"><a href="contact.html">Contact</a></li>
+            </nav>
+        </header>
+        <section class="container" id="container">
+        <section>
+            <h2>Get to Know Divya!</h2>
+            <section class="button-container">
+                <section v-on:click="button=1" class="button">Favorites</section>
+                <section v-on:click="button=2" class="button">Life</section>
+                <section v-on:click="button=3" class="button">Hobbies</section>
+            </section>
+            <section class="info-box">
+                <section v-if="button==1">
+                    <p>Here a few of Divya's current favorites:</p>
+                    <ul>
+                        <li>Color: Purple</li>
+                        <li>Food: Tacos</li>
+                        <li>Music Genre: Hip Hop, R&B, Reggaeton, Afrobeats</li>
+                        <li>Movie Genre: Comedy, Marvel</li>
+                        <li>Song: Nervous by John Legend</li>
+                        <li>Season: Fall</li>
+                        <li>City: Chicago</li>
+                    </ul>
+                </section>
+                <section v-else-if="button==2">
+                    <p>
+                    Divya was born and raised in the Chicago suburbs.
+                    When she was younger, her dream was to become a neurologist, even going 
+                    into her undergrad at University of Iowa as a pre-medicine student! 
+                    After 2 years, though, she realized that her passion did not lie in medicine
+                    and she was more interested in expanding her analytical and problem-solving skills
+                    in software programming. This is what led her to her Bioinformatics bachelors degree.
+                    She has two younger brothers and is the proud owner of 4 adorable parakeets: 
+                    Juno, Luna, Pika (short for Pikachu), and Rico.
+                    </p>
+
+                    <p>Here's a cute picture of little Luna below!</p>
+                    <img src="media/luna.png" class="center" alt="luna" height="315">
+                </section>
+                <section v-else-if="button==3">
+                    <p>In her free time, Divya has many hobbies she participates in. These include: </p>
+                    <ul>
+                        <li>Hanging out with friends</li>
+                        <li>Exercising</li>
+                        <li>Singing/Listening to music</li>
+                        <li>Reading</li>
+                        <li>Trying out new restaurants</li>
+                        <li>Do-It-Yourself projects</li>
+                        <li>Traveling</li>
+                        <li>Cooking/Baking</li>
+                        <li>Online Shopping (maybe a little too much)</li>
+                    </ul>
+                    <p>So far Divya has travelled to the following locations:</p>
+                    <ul>
+                        <li>Italy</li>
+                        <li>Austria</li>
+                        <li>Great Britian</li>
+                        <li>Liechtenstein</li>
+                        <li>Germany</li>
+                        <li>Switzerland</li>
+                        <li>Canada</li>
+                        <li>Mexico</li>
+                        <li>United Arab Emirates</li>
+                        <li>India</li>
+                        <li>Iceland</li>
+                        <li>Many states throughout the United States</li>
+                        <p>...and many more to come!</p>
+                    </ul>
+                </section>
+            </section>
+        </section>
+        <section v-if="button==2">
+            <h2>Iowa Agni</h2>
+            <p>
+                Divya participated in a South Asian fusion Acappella team, Iowa Agni, all throughout her undergrad at the University of Iowa.
+                Here, she took on the role of President her Sophomore to Senior year, while also filling in as music director/composer, 
+                creative director and choreographer on occasion.
+                Divya displayed her exceptional leadership and team building skills as she built Agni from the ground up, 
+                brought great recognition campus-wide and even placing second at their first ever national competition in team history!
+                Feel free to check out Iowa Agni on Instagram at <a href="https://www.instagram.com/iowaagni/">@iowaagni</a>! 
+            </p>
+            <p>
+                Watch a video of a composition, titled "Lovely/Awari," that Divya put together for her team below!
+            </p>
+            <video class="center" id="video" src="media/lovely.mp4" controls width="560" height="315"></video>
+            <p>
+                Another video of Agni's performance of "Phantom Of the Opera" can be found below as well, featuring Divya as a soloist!
+            </p>
+            <section>
+                <iframe class="center" id="video" width="560" height="315" src="https://www.youtube.com/embed/MeMrbEr5LG0" title="YouTube video player" 
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+            </section>
+        </section>
+        </section>
+        <footer>
+            <p>Copyright &copy; 2022 Divya Thomas</p>
+        </footer>
+
+        <script src="./useVue.js"></script>
+    </body>
+</html>
