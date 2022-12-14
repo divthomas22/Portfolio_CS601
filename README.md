@@ -11,3 +11,4 @@ This project's goal was to display my web design skill set and knowledge. Using 
 -	Document object model (DOM)
 -	Website usability
 -	Project management for web design and development
+-	CSS Responsive flexbox design and grid layout
